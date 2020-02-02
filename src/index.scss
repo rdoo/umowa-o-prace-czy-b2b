@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: rgb(249, 249, 249);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* utility classes */
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.text-large {
+  font-size: 1.125rem;
+}
+
+.text-plus {
+  color: rgb(76, 175, 80);
+  font-weight: 500;
+}
+
+.text-minus {
+  color: rgb(244, 67, 54);
+  font-weight: 500;
+}
+
+.main-divider {
+  margin: 40px 0;
+}
+
+.narrow-divider {
+  margin: 2px 0;
+}
+
+.scrolling-table-container {
+  overflow-x: auto;
+}
+
+.result-table {
+  border-collapse: separate;
+
+  th {
+    min-width: 60px;
+  }
+}
+
+$table-border-color: rgba(224, 224, 224, 1);
+.table-head-group {
+  text-align: center;
+  border-top: 1px solid $table-border-color;
+  border-right: 1px solid $table-border-color;
+  border-left: 1px solid $table-border-color;
+  border-bottom: none;
+  border-radius: 24px 24px 0 0;
+}
+
+/* Material UI style overwrite */
+.MuiOutlinedInput-input {
+  padding: 8.5px;
+
+  &.MuiOutlinedInput-inputAdornedEnd {
+    padding-right: 0;
+  }
+}
+
+.MuiIconButton-root:not(.MuiSwitch-switchBase) {
+  padding: 6px;
+}
+
+.MuiTableCell-root {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.MuiDialog-paper:not(.MuiDialog-paperFullWidth) {
+  max-width: 700px;
+}
+
+// workaround for https://github.com/popperjs/popper-core/issues/510
+// TODO remove after Material UI updates popper.js to v.2
+.MuiTooltip-popper {
+  top: 0;
+}

@@ -1,0 +1,57 @@
+{
+  "name": "umowa-o-prace-czy-b2b",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.9.0",
+    "@material-ui/icons": "4.5.1",
+    "ramda": "0.26.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-redux": "7.1.3",
+    "redux": "4.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.1.0",
+    "@testing-library/react": "9.4.0",
+    "@types/jest": "25.1.1",
+    "@types/node": "13.7.0",
+    "@types/ramda": "0.26.40",
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "@types/react-redux": "7.1.7",
+    "awesome-typescript-loader": "5.2.1",
+    "css-loader": "3.4.2",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "25.1.0",
+    "node-sass": "4.13.1",
+    "sass-loader": "8.0.2",
+    "style-loader": "1.1.3",
+    "ts-jest": "25.1.0",
+    "typescript": "3.7.5",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/test/test-setup.ts"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "ignoreCodes": [
+            151001
+          ]
+        }
+      }
+    }
+  }
+}
